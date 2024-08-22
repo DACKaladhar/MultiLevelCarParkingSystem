@@ -61,8 +61,9 @@ while process!='close':
             print('Enter the correct input')
     process = input('\n')
 print('The process is terminated successfully')
-print("\tALERT!",end=' ')
+
 if vnolist!=[]:
+    print("\tALERT!",end=' ')
     print("Below vehicle/s are yet to be unparked")
     for i in range(len(vnolist)):
         print(f'\tVehicle({vnolist[i]})')
